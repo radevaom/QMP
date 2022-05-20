@@ -8,6 +8,7 @@ public class Prenda {
   Color colorPrincipal;
   Color colorSecundario;
   TipoTrama trama;
+  Integer temperatura;
 
   @SuppressWarnings({"checkstyle:MissingJavadocMethod", "checkstyle:WhitespaceAround", "checkstyle:EmptyBlock"})
   public Prenda(TipoDePrenda tipoDePrenda, Material material, Color colorPrincipal, Color colorSecundario, TipoTrama trama) {
@@ -25,6 +26,11 @@ public class Prenda {
   public Categoria getCategoria() {
     return tipoDePrenda.getCategoria();
   }
+
+  public Integer getTemperatura() {
+    return temperatura;
+  }
+
   /*
   @SuppressWarnings("checkstyle:MissingJavadocMethod")
   public Boolean prendaValida(TipoDePrenda _tipo, Material _material) {
