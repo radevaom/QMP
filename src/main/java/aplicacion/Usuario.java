@@ -1,20 +1,27 @@
 package aplicacion;
 
-import APIs.AccuWeatherAPI;
+import java.util.ArrayList;
+import java.util.List;
+import prendas.Guardarropa;
 
-import java.util.HashMap;
 
-// primer req, le genero
+
+
 public class Usuario {
-  TiempoApi aplicacion;
 
-  public Usuario(TiempoApi aplicacion) {
-    this.aplicacion = aplicacion;
+  List<Guardarropa> guardarropas = new ArrayList<>();
+
+
+
+  public void agregarGuardaropas(Guardarropa nuevoGuardaropas) {
+    this.guardarropas.add(nuevoGuardaropas);
   }
 
-  public int consultarClima(String ciudad) {
-    return (int) aplicacion.getWeather(ciudad).get(0).get("Temperature");
-
+  public void sacarGuardaropas(Guardarropa guardaropas) {
+    this.guardarropas.remove(guardaropas);
   }
+
+
+
 
 }
