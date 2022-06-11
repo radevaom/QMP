@@ -6,14 +6,14 @@ import java.util.stream.Collectors;
 
 public class Guardarropa {
   private List<Prenda> prendas = new ArrayList<>();
-  private Usuario propietario;
-  private List<Usuario> colaboradores;
+  //private Usuario propietario;
+  //private List<Usuario> colaboradores;
   private List<PropuestaModificacion> propuestas;
-
+  /*
   public Guardarropa(Usuario propietario) {
     this.propietario = propietario;
   }
-  /*
+
     public Atuendo generarSugerencia(Integer temperatura) {
     Atuendo atuendo = new Atuendo();
     atuendo.agregarPrenda(filtrarPorTemperatura(superiores, temperatura)
@@ -39,11 +39,13 @@ public class Guardarropa {
   }
 
   public List<PropuestaModificacion> propuestasPendientes() {
-    this.propuestas.stream().filter(propuesta -> propuesta.getEstado() == Estado.PENDIENTE).collect(Collectors.toList());
+    return this.propuestas.stream().filter(propuesta ->
+        propuesta.getEstado() == Estado.PENDIENTE).collect(Collectors.toList());
   }
 
   public List<Atuendo> combinacionesPosibles() {
-    // TODO: Algoritmo para obtener todas las combinaciones de atuendos posibles. Un atuendo tiene que estar compuesto de prendas de las 4 categorias.
+    // TODO: Algoritmo para obtener todas las combinaciones de atuendos posibles.
+    //  Un atuendo tiene que estar compuesto de prendas de las 4 categorias.
     return null;
   }
 
@@ -54,7 +56,7 @@ public class Guardarropa {
   public void setPrendas(Prenda ... prendas) {
     Collections.addAll(this.prendas, prendas);
   }
-
+  /*
   public Usuario getPropietario() {
     return propietario;
   }
@@ -66,4 +68,5 @@ public class Guardarropa {
   public void setColaboradores(Usuario ... usuario) {
     Collections.addAll(this.colaboradores, usuario);
   }
+  */
 }

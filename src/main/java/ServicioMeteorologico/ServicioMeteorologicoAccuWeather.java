@@ -1,11 +1,12 @@
 package ServicioMeteorologico;
 
+
 import java.time.LocalDateTime;
 import java.time.temporal.TemporalAmount;
 import java.util.HashMap;
 import java.util.Map;
 
-class ServicioMeteorologicoAccuWeather implements ServicioMeteorologico {
+public class ServicioMeteorologicoAccuWeather implements ServicioMeteorologico {
   private Map<String, RespuestaMeteorologica> ultimasRespuestas;
   private TemporalAmount tiempoDeValidez;
 
@@ -17,7 +18,8 @@ class ServicioMeteorologicoAccuWeather implements ServicioMeteorologico {
   @Override
   public int obtenerTemperatura(String lugar) {
     if (!this.ultimasRespuestas.containsKey(lugar) || this.ultimasRespuestas.get(lugar).expiro()) {
-      ultimasRespuestas.put(lugar, new RespuestaMeteorologica(this.consultarApi(lugar), this.proximaExpiracion()));
+      ultimasRespuestas.put(lugar,
+          new RespuestaMeteorologica(this.consultarApi(lugar), this.proximaExpiracion()));
     }
     return this.ultimasRespuestas.get(lugar).getTemperatura();
   }
