@@ -1,5 +1,5 @@
 DC QMP5
-![QMP5 DC](https://user-images.githubusercontent.com/39410431/173168414-daeb676c-ace6-4b2c-8ee8-22cb51b4d980.png)
+![DC QMP5](https://user-images.githubusercontent.com/39410431/173168459-b7fa5426-9ed4-41ce-8306-8dfda705efab.jpg)
 
 # java-base-project
 
