@@ -1,6 +1,5 @@
 package prendas;
 
-import aplicacion.Usuario;
 import java.util.*;
 import java.util.stream.Collectors;
 
