@@ -1,3 +1,6 @@
+DC QMP6
+![DC QMP6](https://user-images.githubusercontent.com/39410431/174938813-93369028-b295-4542-9e61-9c5f6854f1ed.jpg)
+
 DC QMP5
 ![DC QMP5](https://user-images.githubusercontent.com/39410431/173168459-b7fa5426-9ed4-41ce-8306-8dfda705efab.jpg)
 
